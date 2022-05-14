@@ -1,5 +1,5 @@
 {% set name = "blueqat" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/blueqat-{{ version }}.tar.gz
-  sha256: dbaef7a62cfd4f2c7f9a933e232f9b9542823e904c49eddeed057866a5c69fe8
+  sha256: 6d70938269001d0d155f6a9f200d735778eafc808f8192b78dd72078f2e461e5
 
 build:
   noarch: python
