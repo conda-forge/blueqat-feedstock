@@ -25,7 +25,7 @@ requirements:
     - autoray
     - matplotlib
     - networkx
-    - opt-einsum
+    - opt-einsum >=3.3.0
     - quimb
 
 test:
