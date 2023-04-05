@@ -1,11 +1,11 @@
-About blueqat
-=============
+About blueqat-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/blueqat-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Blueqat/Blueqat
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/blueqat-feedstock/blob/main/LICENSE.txt)
 
 Summary: Quantum Computer Library for Everyone
 
