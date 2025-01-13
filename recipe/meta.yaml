@@ -18,12 +18,13 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - numpy =1.21.0
     - python >={{ python_min }}
     - scipy >=1.5
     - autoray
-    - matplotlib
+    - matplotlib-base
     - networkx
     - opt_einsum >=3.3.0
     - quimb =1.4.0
