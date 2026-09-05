@@ -1,0 +1,50 @@
+schema_version: 1
+
+context:
+  name: blueqat
+  version: "2.0.4"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/blueqat-${{ version }}.tar.gz
+  sha256: fca9bd17716566487452749ac0cb06cf4eb43fffdb33fc87231481371860ba55
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - numpy =1.21.0
+    - python >=${{ python_min }}
+    - scipy >=1.5
+    - autoray
+    - matplotlib-base
+    - networkx
+    - opt_einsum >=3.3.0
+    - quimb =1.4.0
+
+tests:
+  - python:
+      imports:
+        - blueqat
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  summary: Quantum Computer Library for Everyone
+  license: Apache-2.0
+  license_file: LICENSE
+  homepage: https://github.com/Blueqat/Blueqat
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
